@@ -46,7 +46,7 @@ const Hero = () => {
             style={{
               ...tech.style,
               top: `${15 + (index * 20)}%`,
-              left: index % 2 === 0 ? '5%' : '85%',
+              left: index % 2 === 0 ? '5%' : '80%',
             }}
           >
             <div
@@ -110,7 +110,7 @@ const Hero = () => {
         >
           <button
             onClick={() => scrollToSection('projects')}
-            className="px-8 py-2 h-10 w-60 bg-accent text-text-primary font-semibold rounded-lg
+            className="px-8 py-2 h-10 w-50 bg-accent text-text-primary font-semibold rounded-lg
                        hover:bg-accent-hover transform hover:scale-105 transition-all duration-200
                        shadow-lg shadow-accent/25"
           >
