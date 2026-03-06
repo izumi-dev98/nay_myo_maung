@@ -8,7 +8,7 @@ const Projects = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            My Projects
+            My   <span className="text-accent">Projects</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
             Here are some of the projects I've worked on, showcasing my skills in Laravel, React, and modern web development.

@@ -30,9 +30,9 @@ const Contact = () => {
   };
 
   const socialLinks = [
-    { icon: faLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: faGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: faTwitter, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: faLinkedin, url: 'www.linkedin.com/in/nay-myo-maung-dev', label: 'LinkedIn' },
+    { icon: faGithub, url: 'https://github.com/izumi-dev98', label: 'GitHub' },
+    
   ];
 
   return (
@@ -41,7 +41,7 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-            Get In Touch
+            Get In <span className="text-accent">Touch</span>
           </h2>
           <p className="text-text-secondary text-lg max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? Feel free to reach out!
@@ -80,7 +80,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-text-secondary text-sm">Location</p>
-                  <p className="text-text-primary">Yangon, Myanmar</p>
+                  <p className="text-text-primary">Taunggyi, Myanmar</p>
                 </div>
               </div>
             </div>

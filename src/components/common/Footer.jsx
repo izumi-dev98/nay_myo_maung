@@ -8,9 +8,9 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: faLinkedin, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: faGithub, url: 'https://github.com', label: 'GitHub' },
-    { icon: faTwitter, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: faLinkedin, url: 'www.linkedin.com/in/nay-myo-maung-dev', label: 'LinkedIn' },
+    { icon: faGithub, url: 'https://github.com/izumi-dev98', label: 'GitHub' },
+ 
   ];
 
   const currentYear = new Date().getFullYear();

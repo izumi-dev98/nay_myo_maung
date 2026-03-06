@@ -3,6 +3,7 @@ import SkillsAnimation from "./SkillsAnimation";
 import CertificateCard from "./CertificateCard";
 import { certificates } from "../../data/certificates";
 import profileImg from "../../assets/profile/profile.jpg";
+import cvPdf from "../../assets/cv/Profile.pdf";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -124,9 +125,13 @@ const About = () => {
             </div>
 
             {/* Download CV Button */}
-            <button className="px-6 py-3 bg-accent text-text-primary font-semibold rounded-lg hover:bg-accent-hover transform hover:scale-105 transition-all duration-200 shadow-lg shadow-accent/25">
+            <a
+              href={cvPdf}
+              download="NayMyoMaung_CV.pdf"
+              className="inline-block px-6 py-3 bg-accent text-text-primary font-semibold rounded-lg hover:bg-accent-hover transform hover:scale-105 transition-all duration-200 shadow-lg shadow-accent/25 cursor-pointer"
+            >
               Download CV
-            </button>
+            </a>
           </div>
         </div>
 
