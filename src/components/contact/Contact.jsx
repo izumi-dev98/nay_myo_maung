@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faLocationDot, faPaperPlane, faCheck, faTriangleExclamation } from '@fortawesome/free-solid-svg-icons';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,14 +20,26 @@ const Contact = () => {
     e.preventDefault();
     setStatus('submitting');
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        'service_3h1enti', // service key
+        'template_8bbx3j7', // template key
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        'YVG7_tm1BO8q4GZma' // Public Key
+      );
+
       setStatus('success');
       setFormData({ name: '', email: '', message: '' });
-
-      // Reset status after 3 seconds
       setTimeout(() => setStatus('idle'), 3000);
-    }, 1500);
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   };
 
   const socialLinks = [
