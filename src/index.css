@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #0a0a0f;
+  color: #f8fafc;
+  font-family: 'Fira Code', ui-monospace, SFMono-Regular, monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sora', ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.title-glow {
+  color: #22d3ee;
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.55);
+  animation: pulse-glow 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    color: #22d3ee;
+    text-shadow: 0 0 12px rgba(34, 211, 238, 0.45);
+    transform: translateY(0);
+  }
+
+  50% {
+    color: #a855f7;
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.65);
+    transform: translateY(-2px);
+  }
+}
+
+.hero-card {
+  animation: float-card 4.8s ease-in-out infinite;
+}
+
+@keyframes float-card {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title-glow,
+  .hero-card {
+    animation: none;
+  }
+}
