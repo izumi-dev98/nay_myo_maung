@@ -274,6 +274,16 @@ function ProjectsSection() {
       codeUrl: 'https://github.com/izumi-dev98/E_Card-.git',
       codeLabel: 'Source Code',
     },
+      {
+      title: 'NOSH CPMS',
+      description:
+        'A React + TypeScript + Vite parking management project for handling parking slots, vehicle types, reports, user roles, and access control using Supabase as the real database.',
+      stack: ['React', 'Tailwind CSS'],
+      liveUrl: 'https://nosh-cpms.vercel.app/',
+      liveLabel: 'Live Demo',
+      codeUrl: 'https://github.com/izumi-dev98/Nosh_CPMS.git',
+      codeLabel: 'Source Code',
+    },
     {
       title: 'Nosh Pos ',
       description:
