@@ -277,8 +277,8 @@ function ProjectsSection() {
       {
       title: 'NOSH CPMS',
       description:
-        'A React + TypeScript + Vite parking management project for handling parking slots, vehicle types, reports, user roles, and access control using Supabase as the real database.',
-      stack: ['React', 'Tailwind CSS'],
+        'A Smart Parking Management System built with React, TypeScript, Vite, and Supabase. It streamlines parking operations with real-time slot tracking, multi-category vehicle handling, detailed reporting, and secure role-based access control (RBAC). Designed for efficiency and scalability!',
+      stack: ['React', 'Tailwind CSS' , 'Supabase'],
       liveUrl: 'https://nosh-cpms.vercel.app/',
       liveLabel: 'Live Demo',
       codeUrl: 'https://github.com/izumi-dev98/Nosh_CPMS.git',
