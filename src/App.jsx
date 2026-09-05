@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
-import cvFile from './assets/naymyomaung.pdf'
+import cvFile from './assets/Nay-Myo-Maung-CV.pdf'
 
 const navLinks = [
   { label: 'Home', to: '#home' },
