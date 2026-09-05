@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
+import cvFile from './assets/naymyomaung.pdf'
 
 const navLinks = [
   { label: 'Home', to: '#home' },
@@ -188,6 +189,16 @@ I’m passionate about modern technology, continuous learning, and developing we
                   </span>
                 ))}
               </div>
+              <a
+                href={cvFile}
+                download="Nay-Myo-Maung-CV.pdf"
+                className="mt-8 inline-flex items-center gap-3 rounded-full bg-cyan-400 px-5 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5" aria-hidden="true">
+                  <path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                Download CV
+              </a>
             </div>
 
             <div className="rounded-4xl border border-white/10 bg-linear-to-r from-cyan-400/10 to-fuchsia-500/10 p-8 backdrop-blur-xl">
